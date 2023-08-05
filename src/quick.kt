@@ -1,10 +1,10 @@
 fun main(args: Array<String>) {
     val array = readLine()!!.split(" ").map { it.toInt() }.toIntArray() // 1) Read the input and split into array
     quickSort(array, 0, array.size-1)
-    for(i in array) println(i)
+    for(i in array) print("$i ")
 }
 fun quickSort(array: IntArray, left: Int, right: Int) {
-    val index = partition (array, left, right)
+    val index = partitions (array, left, right)
     if(left < index-1) { // 2) Sorting left half
         quickSort(array, left, index-1)
     }
@@ -12,7 +12,7 @@ fun quickSort(array: IntArray, left: Int, right: Int) {
         quickSort(array,index, right)
     }
 }
-fun partition(array: IntArray, l: Int, r: Int): Int {
+fun partitions(array: IntArray, l: Int, r: Int): Int {
     var left = l
     var right = r
     val pivot = array[(left + right)/2] // 4) Pivot Point
