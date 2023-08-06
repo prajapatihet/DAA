@@ -1,16 +1,14 @@
 import java.util.Arrays;
-
-public class Quick {
+public class Quick{
     public static void main(String[] args) {
-        int[] arr = {4, 5, 1, 9, 2 ,4,3};
-        System.out.println("Original Array "+ Arrays.toString(arr));
+        int[] arr = {5, 95 , 2, 3, 72, 9};
+        System.out.println("Original Array: "+ Arrays.toString(arr));
         quicksort(arr,0,arr.length-1);
-        System.out.println("Sorted Array "+Arrays.toString(arr));
+        System.out.println("Sorted Array: "+Arrays.toString(arr));
     }
-
-    public static void quicksort(int[] A, int low, int high) {
+    public static void quicksort(int[] A, int low, int high){
         if(low<high){
-            int pivot = partition(A, low, high);
+            int pivot = partition(A,low,high);
             quicksort(A,low,pivot-1);
             quicksort(A,pivot+1,high);
         }
@@ -23,14 +21,14 @@ public class Quick {
             while(left<=right && A[left] <= pivot_item){
                 left++;
             }
-            while(left<=right && A[right] > pivot_item){
+            while (left<=right && A[right] > pivot_item){
                 right--;
             }
             if(left<right){
                 swap(A,left,right);
             }
         }
-        A[low]=A[right];
+        A[low] = A[right];
         A[right] = pivot_item;
         return right;
     }
