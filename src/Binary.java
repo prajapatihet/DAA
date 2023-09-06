@@ -9,7 +9,6 @@ public class Binary {
         }else{
             System.out.println("Not Found");
         }
-
     }
     public static int binarySearch(int[] A,int data){
         int low=0;
