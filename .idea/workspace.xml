@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14653db6-9ce0-4d88-916b-dda9aeac9958" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/FindDuplicateNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LargestMinimumDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RepeatingMissingNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
